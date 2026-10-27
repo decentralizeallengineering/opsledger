@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opsledger"
+version = "0.1.0"
+description = "Turn a large multi-part request into tracked asks and a percentage complete."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+dependencies = []
+
+[project.scripts]
+opsledger = "opsledger:main"
+
+[tool.setuptools]
+py-modules = ["opsledger"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
