@@ -1,5 +1,7 @@
 # opsledger
 
+[![tests](https://github.com/decentralizeallengineering/opsledger/actions/workflows/tests.yml/badge.svg)](https://github.com/decentralizeallengineering/opsledger/actions/workflows/tests.yml) ![license](https://img.shields.io/badge/license-Apache--2.0-blue)
+
 Turns an "operation" (a large, multi-part request from a person) into tracked asks and a percent complete.
 
 Big requests get lost in chat. opsledger keeps the person's own words in an append-only log, splits the request into workstreams and asks, dedupes and deconflicts them (newest wording wins, old rows are kept with dates), and scores progress with an evidence trail. Python standard library only; storage is one JSON file plus generated markdown.
